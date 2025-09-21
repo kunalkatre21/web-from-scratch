@@ -1,1 +1,4 @@
+/* Import Tailwind CSS */
 @import "tailwindcss";
+
+/* DaisyUI will be loaded through PostCSS configuration */
