@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML CSS JS Project with DaisyUI v5 & Tailwind v4</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-4">
+                DaisyUI v5 + Tailwind v4 Project
+            </h1>
+            <p class="text-center text-gray-600">
+                A basic setup with modern CSS framework and component library
+            </p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Buttons Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Buttons</h2>
+                <div class="flex flex-wrap gap-4">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-accent">Accent Button</button>
+                    <button class="btn btn-success">Success Button</button>
+                    <button class="btn btn-warning">Warning Button</button>
+                    <button class="btn btn-error">Error Button</button>
+                </div>
+            </section>
+
+            <!-- Cards Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Cards</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h3 class="card-title">Card 1</h3>
+                            <p>This is a basic card component from DaisyUI.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h3 class="card-title">Card 2</h3>
+                            <p>Another card with different content.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-secondary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h3 class="card-title">Card 3</h3>
+                            <p>Third card to demonstrate the grid layout.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-accent">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Form Example</h2>
+                <div class="card bg-base-100 shadow-xl w-full max-w-md mx-auto">
+                    <div class="card-body">
+                        <h3 class="card-title">Contact Form</h3>
+                        <form id="contactForm">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Name</span>
+                                </label>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered" required>
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="Enter your email" class="input input-bordered" required>
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Message</span>
+                                </label>
+                                <textarea class="textarea textarea-bordered" placeholder="Enter your message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alert Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Alerts</h2>
+                <div class="alert alert-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>This is an info alert component.</span>
+                </div>
+                <div class="alert alert-success mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Success! Your form was submitted successfully.</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-600">
+            <p>&copy; 2024 DaisyUI v5 + Tailwind v4 Project. Built with modern web technologies.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="src/app.js"></script>
+</body>
+</html>

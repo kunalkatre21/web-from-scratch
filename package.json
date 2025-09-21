@@ -1,0 +1,25 @@
+{
+  "name": "web-from-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli@latest -i src/app.css -o dist/output.css",
+    "watch": "npx @tailwindcss/cli@latest -i src/app.css -o dist/output.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "daisyui": "^5.1.13",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
