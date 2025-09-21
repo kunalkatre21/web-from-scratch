@@ -101,3 +101,7 @@ jspm_packages/
 
 # GitHub workflow artifacts
 .github/workflows/artifacts/
+
+# Project-specific ignores
+.bmad-core/
+.kilocodemodes
