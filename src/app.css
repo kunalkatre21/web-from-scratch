@@ -1,2 +1,49 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: dracula --default;
+}
+
+/* ADD: New preloader styles */
+.preloader {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+    background-color: oklch(28.822% 0.022 277.508); display: flex;
+    justify-content: center; align-items: center; z-index: 9999;
+    transition: opacity 0.5s ease 0.8s, visibility 0.5s ease 0.8s;
+    opacity: 1;
+    visibility: visible;
+}
+.preloader.loaded { opacity: 0; visibility: hidden; }
+
+.preloader-text {
+    text-align: center;
+    color: var(--color-text);
+}
+
+.preloader-text span {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.preloader-text span:first-child {
+    font-family: var(--font-family-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    animation-delay: 0.1s;
+}
+
+.preloader-text span:last-child {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+    animation-delay: 0.3s;
+}
+
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

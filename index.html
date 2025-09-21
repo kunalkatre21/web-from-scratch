@@ -3,128 +3,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML CSS JS Project with DaisyUI v5 & Tailwind v4</title>
+    <title>Kunal Katre | Product Designer</title>
+    
+    <meta name="description" content="The career narrative of a product designer, evolving from Foundation to Builder to Platform Strategist.">
+    <meta name="author" content="Kunal Katre">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
-        <!-- Header -->
-        <header class="mb-8">
-            <h1 class="text-4xl font-bold text-center text-gray-800 mb-4">
-                DaisyUI v5 + Tailwind v4 Project
-            </h1>
-            <p class="text-center text-gray-600">
-                A basic setup with modern CSS framework and component library
-            </p>
-        </header>
+<body class="bg-base-100 min-h-screen">
 
-        <!-- Main Content -->
-        <main>
-            <!-- Buttons Section -->
-            <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Buttons</h2>
-                <div class="flex flex-wrap gap-4">
-                    <button class="btn btn-primary">Primary Button</button>
-                    <button class="btn btn-secondary">Secondary Button</button>
-                    <button class="btn btn-accent">Accent Button</button>
-                    <button class="btn btn-success">Success Button</button>
-                    <button class="btn btn-warning">Warning Button</button>
-                    <button class="btn btn-error">Error Button</button>
-                </div>
-            </section>
-
-            <!-- Cards Section -->
-            <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Cards</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h3 class="card-title">Card 1</h3>
-                            <p>This is a basic card component from DaisyUI.</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h3 class="card-title">Card 2</h3>
-                            <p>Another card with different content.</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-secondary">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h3 class="card-title">Card 3</h3>
-                            <p>Third card to demonstrate the grid layout.</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-accent">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Form Section -->
-            <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Form Example</h2>
-                <div class="card bg-base-100 shadow-xl w-full max-w-md mx-auto">
-                    <div class="card-body">
-                        <h3 class="card-title">Contact Form</h3>
-                        <form id="contactForm">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Name</span>
-                                </label>
-                                <input type="text" placeholder="Enter your name" class="input input-bordered" required>
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Email</span>
-                                </label>
-                                <input type="email" placeholder="Enter your email" class="input input-bordered" required>
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Message</span>
-                                </label>
-                                <textarea class="textarea textarea-bordered" placeholder="Enter your message" rows="4" required></textarea>
-                            </div>
-                            <div class="form-control mt-6">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Alert Section -->
-            <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-6 text-gray-700">Alerts</h2>
-                <div class="alert alert-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>This is an info alert component.</span>
-                </div>
-                <div class="alert alert-success mt-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>Success! Your form was submitted successfully.</span>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="mt-12 text-center text-gray-600">
-            <p>&copy; 2024 DaisyUI v5 + Tailwind v4 Project. Built with modern web technologies.</p>
-        </footer>
+    <!-- [UPDATED] Enhanced Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">
+            <span>Kunal Katre</span>
+            <span>Lead Product Designer, Founding Designer & Systems Architect</span>
+        </div>
     </div>
 
-    <!-- JavaScript -->
-    <script src="src/app.js"></script>
+    <!-- [REPLACE IT WITH THIS] -->
+    <nav class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li>
+                        <details>
+                            <summary class="text-base-content/70 hover:text-primary flex items-center gap-2">
+                                <span>The Journey</span>
+                            </summary>
+                            <ul class="p-2">
+                                <li><a href="#act1" class="text-base-content/70 hover:text-primary">Act I: The Foundation</a></li>
+                                <li><a href="#act2" class="text-base-content/70 hover:text-primary">Act II: The Builder</a></li>
+                                <li><a href="#act3" class="text-base-content/70 hover:text-primary">Act III: The Platform Strategist</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="#process" class="text-base-content/70 hover:text-primary">Design Process</a></li>
+                    <li><a href="cv.html" class="text-base-content/70 hover:text-primary">Résumé</a></li>
+                    <li><a href="#contact" class="text-base-content/70 hover:text-primary">About & Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl font-serif font-bold">Kunal Katre</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li>
+                    <details>
+                        <summary class="text-base-content/70 hover:text-primary flex items-center gap-2">
+                            <span>The Journey</span>
+                        </summary>
+                        <ul class="p-2">
+                            <li><a href="#act1" class="text-base-content/70 hover:text-primary">Act I: The Foundation</a></li>
+                            <li><a href="#act2" class="text-base-content/70 hover:text-primary">Act II: The Builder</a></li>
+                            <li><a href="#act3" class="text-base-content/70 hover:text-primary">Act III: The Platform Strategist</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="#process" class="text-base-content/70 hover:text-primary">Design Process</a></li>
+                <li><a href="#contact" class="text-base-content/70 hover:text-primary">About & Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <a href="#" data-theme="portfolio" class="theme-option capitalize">
+                            <span class="text-primary">Portfolio</span> - Brand Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="case-study" class="theme-option capitalize">
+                            <span class="text-primary">Case Study</span> - Enhanced Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="minimal" class="theme-option capitalize">
+                            <span class="text-primary">Minimal</span> - Clean Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="business" class="theme-option capitalize">
+                            <span class="text-primary">Business</span> - Professional Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="corporate" class="theme-option capitalize">
+                            <span class="text-primary">Corporate</span> - Corporate Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="dracula" class="theme-option capitalize">
+                            <span class="text-primary">Dracula</span> - Dark Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="valentine" class="theme-option capitalize">
+                            <span class="text-primary">Valentine</span> - Warm Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="retro" class="theme-option capitalize">
+                            <span class="text-primary">Retro</span> - Vintage Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="cyberpunk" class="theme-option capitalize">
+                            <span class="text-primary">Cyberpunk</span> - Futuristic Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-theme="halloween" class="theme-option capitalize">
+                            <span class="text-primary">Halloween</span> - Seasonal Theme
+                        </a>
+                    </li>
+                    <li class="menu-title mt-2">System Preferences</li>
+                    <li>
+                        <a href="#" id="system-theme" class="capitalize">
+                            <span class="text-primary">Use System Theme</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="auto-theme" class="capitalize">
+                            <span class="text-primary">Auto Theme (Time-based)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="cv.html" class="btn btn-ghost text-base-content/70 hover:text-primary">Résumé</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto">
+        <div class="hero-gradient"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <header class="hero min-h-[80vh]">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <figure class="max-w-sm rounded-lg shadow-2xl">
+                        <img src="assets/kunal-katre-photo.webp" alt="A professional photo of Kunal Katre" class="w-full h-auto aspect-square object-cover rounded-full border-4 border-white shadow-lg transition-transform duration-700" data-depth="0.1">
+                    </figure>
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight mb-8">
+                            <span>From Features to Foundations.</span>
+                            <span>From Products to Platforms.</span>
+                        </h1>
+                        <p class="text-lg text-base-content/70 max-w-[55ch] mb-16 text-balance">
+                            I'm Kunal, a product designer who loves turning ambiguity into clarity. My journey is one of increasing abstraction—from building features to architecting systems that empower teams and scale to millions.
+                        </p>
+                        <div class="flex gap-4 justify-center lg:justify-start">
+                            <a href="mailto:kunalkatre1995@gmail.com" class="btn btn-primary">Get In Touch</a>
+                            <a href="cv.html" class="btn btn-outline">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main id="journey" class="py-32">
+                <!-- ACT I -->
+                <section id="act1" class="grid md:grid-cols-2 gap-16 mb-32">
+                    <div class="sticky top-[25vh] self-start">
+                        <span class="text-sm font-semibold text-base-content/50 uppercase tracking-wider">Act I</span>
+                        <h2 class="font-serif text-4xl md:text-5xl text-primary">The Foundation</h2>
+                    </div>
+                    <div class="flex flex-col gap-16">
+                        <article class="card bg-base-100 p-8 rounded-lg border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://logo.clearbit.com/iitg.ac.in" alt="IIT Guwahati logo" class="w-10 h-10 object-contain rounded">
+                                <div><h3 class="font-serif text-xl text-base-content">Indian Institute of Technology</h3><span class="text-base-content/70">Guwahati | 2013 – 2017</span></div>
+                            </div>
+                            <p class="text-base-content mb-4 flex-grow">My journey began with a Bachelor of Design, where I learned the fundamentals of human-centered design, systems thinking, and a rigorous, first-principles approach to problem-solving.</p>
+                            <div class="flex flex-wrap gap-2"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">B.Des, Design</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Minor in Engineering</span></div>
+                        </article>
+                        <article class="card bg-base-100 p-8 rounded-lg border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                              <div class="flex items-center gap-4 mb-4">
+                                 <img src="https://logo.clearbit.com/flipkart.com" alt="Flipkart logo" class="w-10 h-10 object-contain rounded">
+                                 <div><h3 class="font-serif text-xl text-base-content">Seller Platform & Tools</h3><span class="text-base-content/70">Product Designer at Flipkart | 2017 – 2019</span></div>
+                             </div>
+                             <p class="text-base-content mb-4 flex-grow">As a product designer, I redesigned the core seller <strong>listings platform</strong> and delivered data-driven promotions & pricing tools, improving efficiency for sellers managing thousands of SKUs.</p>
+                             <div class="flex flex-wrap gap-2"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">B2B Platforms</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Core UX</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Design at Scale</span></div>
+                         </article>
+                    </div>
+                </section>
+            
+                <!-- ACT II -->
+                <section id="act2" class="grid md:grid-cols-2 gap-16 mb-32">
+                    <div class="sticky top-[25vh] self-start">
+                        <span class="text-sm font-semibold text-base-content/50 uppercase tracking-wider">Act II</span>
+                        <h2 class="font-serif text-4xl md:text-5xl text-primary">The Builder</h2>
+                    </div>
+                    <div class="flex flex-col gap-16">
+                        <article class="card bg-base-100 p-8 rounded-lg border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://logo.clearbit.com/crio.do" alt="Crio.Do logo" class="w-10 h-10 object-contain rounded">
+                                <div><h3 class="font-serif text-xl text-base-content">Educational Platform 0-to-1</h3><span class="text-base-content/70">Founding Designer at Crio.Do | 2019 – 2021</span></div>
+                            </div>
+                            <p class="text-base-content mb-4 flex-grow">As the first designer, I established the initial design system and designed a flexible educational platform to accommodate diverse content, from theory to hands-on coding.</p>
+                            <div class="flex flex-wrap gap-2"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">0-to-1 Product</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">User Research</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">EdTech</span></div>
+                        </article>
+                        <a href="case-study-cowin.html" class="no-underline">
+                            <article class="card bg-base-100 p-8 rounded-lg border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                                <!-- <div class="project-card__thumbnail"><img src="assets/thumb-cowin.png" alt="Thumbnail for CoWIN case study"></div> -->
+                                <div class="flex flex-col">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="https://logo.clearbit.com/eka.care" alt="Eka.Care logo" class="w-10 h-10 object-contain rounded">
+                                        <div><h3 class="font-serif text-xl text-base-content">Co-WIN Vaccine Booking</h3><span class="text-base-content/70">Founding Designer at Eka.Care | 2021</span></div>
+                                    </div>
+                                    <p class="text-base-content mb-4 flex-grow">Led the design for a high-panic, high-scale feature, meticulously handling complex logic and user anxiety to help millions during a national crisis.</p>
+                                    <div class="flex flex-wrap gap-2 mb-4"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">UX in Crisis</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Consumer Health</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">High-Impact</span></div>
+                                    <span class="font-semibold text-primary">Unpack the Strategy →</span>
+                                </div>
+                            </article>
+                        </a>
+                        <!-- [UPDATED] Link to heart rate case study fixed -->
+                        <a href="case-study-heart-rate.html" class="no-underline">
+                            <article class="card bg-base-100 p-8 rounded-lg border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                                <!-- <div class="project-card__thumbnail"><img src="assets/thumb-hr.png" alt="Thumbnail for Heart Rate Monitor case study"></div> -->
+                                <div class="flex flex-col">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="https://logo.clearbit.com/eka.care" alt="Eka.Care logo" class="w-10 h-10 object-contain rounded">
+                                        <div><h3 class="font-serif text-xl text-base-content">Heart Rate Monitor Turnaround</h3><span class="text-base-content/70">Founding Designer at Eka.Care | 2022</span></div>
+                                    </div>
+                                    <p class="text-base-content mb-4 flex-grow">Diagnosed a failing feature with a rigorous research plan and led a design pivot that lifted first-time user conversion by over 21%.</p>
+                                    <div class="flex flex-wrap gap-2 mb-4"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Funnel Analysis</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Interaction Design</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Data-Driven UX</span></div>
+                                    <span class="font-semibold text-primary">See the Turnaround →</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- ACT III -->
+                <section id="act3" class="grid md:grid-cols-2 gap-16 mb-32">
+                    <div class="sticky top-[25vh] self-start">
+                        <span class="text-sm font-semibold text-base-content/50 uppercase tracking-wider">Act III</span>
+                        <h2 class="font-serif text-4xl md:text-5xl text-primary">The Platform Strategist</h2>
+                    </div>
+                    <div class="flex flex-col gap-16">
+                        <div class="no-underline">
+                            <article class="card bg-base-100 p-8 rounded-lg border-l-4 border-primary border border-base-300 shadow-sm hover:shadow-lg transition-all duration-300" data-scroll-reveal>
+                                <!-- <div class="project-card__thumbnail"><img src="assets/thumb-sdk.png" alt="Thumbnail for SDK case study"></div> -->
+                                <div class="flex flex-col">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="https://logo.clearbit.com/eka.care" alt="Eka.Care logo" class="w-10 h-10 object-contain rounded">
+                                        <div><h3 class="font-serif text-xl text-base-content">Product "SDK-ization" & Theming</h3><span class="text-base-content/70">Founding Designer at Eka.Care | 2022 - Present</span></div>
+                                    </div>
+                                    <p class="text-base-content mb-4 flex-grow">Architecting a themeable design system and modular SDK to unlock a new B2B revenue stream with enterprise clients like Medanta and Samsung.</p>
+                                    <div class="flex flex-wrap gap-2"><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Platform Strategy</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">Design Systems</span><span class="bg-base-200 text-base-content px-3 py-1 rounded-full text-sm">B2B2C</span></div>
+                                    <!-- <span class="project-card__cta">Analyze the System →</span> -->
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <section id="process" class="py-32">
+                  <h2 class="text-center font-serif text-4xl mb-4">My Design Process</h2>
+                  <p class="text-center  mx-auto mb-16 text-base-content/70 text-balance">This is not just a list of buzzwords, but a practical mindset honed over years of shipping products. It's a synthesis of the Double Diamond framework and agile execution that guides my decisions, trade-offs, and collaborations every day.</p>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                     <div class="border-t-2 border-base-300 pt-8 transition-colors duration-300 hover:border-primary"><div class="text-5xl text-primary leading-none mb-4">"</div><h3 class="font-serif text-lg mb-4">1. Discover & Define</h3><p class="text-base-content/70">I start by turning ambiguity into clarity. This involves deep research, data analysis, and stakeholder interviews to frame the right problem before jumping to solutions.</p></div>
+                     <div class="border-t-2 border-base-300 pt-8 transition-colors duration-300 hover:border-primary"><div class="text-5xl text-primary leading-none mb-4">"</div><h3 class="font-serif text-lg mb-4">2. Design & Develop</h3><p class="text-base-content/70">I believe in systems over symptoms. I explore multiple solutions, prototype iteratively, and architect scalable systems that address the core issue, not just the surface-level request.</p></div>
+                     <div class="border-t-2 border-base-300 pt-8 transition-colors duration-300 hover:border-primary"><div class="text-5xl text-primary leading-none mb-4">"</div><h3 class="font-serif text-lg mb-4">3. Deliver & Impact</h3><p class="text-base-content/70">My work doesn't end in Figma. I collaborate closely with engineering to ensure high-quality execution, measure the results post-launch, and use those learnings to inform the next iteration.</p></div>
+                  </div>
+             </section>
+
+            <footer id="contact" class="border-t border-base-300 pt-16">
+                <section class="grid md:grid-cols-[1fr,250px] gap-16 items-center bg-base-100 p-8 rounded-lg border border-base-300 mb-32">
+                    <div>
+                        <h3 class="font-serif text-xl mb-4">A Little More About Me</h3>
+                        <p class="text-base-content/70">My professional interest in systems thinking extends into my personal time. I'm constantly exploring the ever-evolving world of AI and its design implications, and I stay informed on global affairs, particularly geopolitics and economics. When I'm not focused on macro trends, you'll find me immersed in PC gaming—powered by a custom-built machine I'm proud to have architected myself. I also enjoy the strategic narratives found in a good anime or manga series.</p>
+                    </div>
+                    <div><img src="assets/kunal-katre-photo.webp" alt="A casual photo of Kunal Katre" class="w-full rounded-full aspect-square object-cover"></div>
+                </section>
+                <div class="text-center mb-4">
+                    <h2 class="font-serif text-3xl md:text-4xl">Let's build something enduring.</h2>
+                    <a href="mailto:kunalkatre1995@gmail.com" class="text-xl text-base-content/70 mb-8 block">kunalkatre1995@gmail.com</a>
+                    <div class="flex justify-center gap-8">
+                        <a href="https://www.linkedin.com/in/kunal-katre-98a945a2/" target="_blank" aria-label="LinkedIn"><svg class="w-6 h-6 text-base-content/70 hover:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        <a href="https://github.com/kunalkatre21" target="_blank" aria-label="GitHub"><svg class="w-6 h-6 text-base-content/70 hover:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        <a href="https://x.com/kunalkatre1995" target="_blank" aria-label="Twitter"><svg class="w-6 h-6 text-base-content/70 hover:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    </div>
+                </div>
+                <p class="mt-16 text-base-content/50 text-sm text-center pb-4">Designed with intention, coded with care. © 2025 Kunal Katre</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Theme Switching JavaScript -->
+    <script>
+        // Theme Management System
+        class ThemeManager {
+            constructor() {
+                this.themes = ['portfolio', 'case-study', 'minimal', 'business', 'corporate', 'dracula', 'valentine', 'retro', 'cyberpunk', 'halloween'];
+                this.currentTheme = localStorage.getItem('theme') || 'portfolio';
+                this.systemTheme = null;
+                this.autoThemeEnabled = localStorage.getItem('autoTheme') === 'true';
+                this.init();
+            }
+
+            init() {
+                this.setTheme(this.currentTheme);
+                this.bindEvents();
+                this.detectSystemTheme();
+                this.setupAutoTheme();
+            }
+
+            setTheme(theme) {
+                this.currentTheme = theme;
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                
+                // Update active theme option
+                document.querySelectorAll('.theme-option').forEach(option => {
+                    option.classList.remove('active');
+                    if (option.dataset.theme === theme) {
+                        option.classList.add('active');
+                    }
+                });
+
+                // Announce theme change to screen readers
+                this.announceThemeChange(theme);
+            }
+
+            detectSystemTheme() {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    this.systemTheme = 'dracula';
+                } else {
+                    this.systemTheme = 'portfolio';
+                }
+            }
+
+            setupAutoTheme() {
+                if (this.autoThemeEnabled) {
+                    const hour = new Date().getHours();
+                    const isDayTime = hour >= 6 && hour < 18;
+                    const theme = isDayTime ? 'portfolio' : 'dracula';
+                    this.setTheme(theme);
+                }
+            }
+
+            useSystemTheme() {
+                this.autoThemeEnabled = false;
+                localStorage.setItem('autoTheme', 'false');
+                this.setTheme(this.systemTheme);
+            }
+
+            enableAutoTheme() {
+                this.autoThemeEnabled = true;
+                localStorage.setItem('autoTheme', 'true');
+                this.setupAutoTheme();
+            }
+
+            // Additional utility methods for testing
+            isThemeValid(theme) {
+                return this.themes.includes(theme);
+            }
+
+            getCurrentTheme() {
+                return this.currentTheme;
+            }
+
+            getSystemTheme() {
+                return this.systemTheme;
+            }
+
+            isAutoThemeEnabled() {
+                return this.autoThemeEnabled;
+            }
+
+            bindEvents() {
+                // Theme option clicks
+                document.querySelectorAll('.theme-option').forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const theme = e.currentTarget.dataset.theme;
+                        this.setTheme(theme);
+                        this.autoThemeEnabled = false;
+                        localStorage.setItem('autoTheme', 'false');
+                    });
+                });
+
+                // System theme option
+                document.getElementById('system-theme')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.useSystemTheme();
+                });
+
+                // Auto theme option
+                document.getElementById('auto-theme')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.enableAutoTheme();
+                });
+
+                // Listen for system theme changes
+                if (window.matchMedia) {
+                    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                        this.detectSystemTheme();
+                        if (this.autoThemeEnabled) {
+                            this.setupAutoTheme();
+                        }
+                    });
+                }
+            }
+
+            announceThemeChange(theme) {
+                // Create a live region for screen readers
+                const announcement = document.createElement('div');
+                announcement.setAttribute('role', 'status');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.className = 'sr-only';
+                announcement.textContent = `Theme changed to ${theme}`;
+                document.body.appendChild(announcement);
+                
+                // Remove after announcement
+                setTimeout(() => {
+                    document.body.removeChild(announcement);
+                }, 1000);
+            }
+        }
+
+        // Initialize theme manager when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeManager = new ThemeManager();
+            // Expose to global scope for testing
+            window.ThemeManager = ThemeManager;
+            window.themeManager = themeManager;
+            
+            // Ensure ThemeManager instance is properly initialized
+            setTimeout(() => {
+                window.themeManagerInitialized = true;
+            }, 100);
+        });
+
+        // Handle page loading to prevent flash of unstyled content
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+            
+            // Hide preloader after a short delay to ensure smooth transition
+            setTimeout(function() {
+                const preloader = document.querySelector('.preloader');
+                if (preloader) {
+                    preloader.classList.add('loaded');
+                }
+            }, 500);
+        });
+        
+        // Fallback in case load event doesn't fire
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+            
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.classList.add('loaded');
+            }
+        }, 2500);
+    </script>
+    <script src="test-themes.js"></script>
+    <script src="final-verification.js"></script>
 </body>
 </html>
